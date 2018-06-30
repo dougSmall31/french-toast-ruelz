@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:rgb(188, 15, 16);
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-bars {
+    color: white;
+}
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+
+.blue {
+    background-color: blue
+}
+
+.image-container {
+    background: url('https://d1lyevreq2tvuq.cloudfront.net/wp-content/uploads/2018/02/16093439/Kneaders-Bakery-Cafe-Menu-Breakfast-Chunky-Cinnamon-French-Toast-Entree.png') no-repeat center center fixed;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+
+/* if the width of whatever is at least 900px, then apply these styles */
+@media (min-width: 900px) {
+    .fa-bars {
+        display: none !important;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+}
